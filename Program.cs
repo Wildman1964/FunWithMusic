@@ -3,7 +3,7 @@
 /*=== Spring 2025 - Northwestern Michigan College === */
 /*=== Week 3 Programming Assignment === */
 /*=== Fun With Music (Exercises 1 & 2) ===*/
-/*=== Created: 2/2/2025 Last Modified: 2/3/2025 */
+/*=== Created: 2/2/2025 Last Modified: 2/8/2025 */
 
 
 using System;
@@ -95,10 +95,9 @@ namespace FunWithMusic
             moreMusic = music;
             Console.WriteLine("Enter the Next Track/Song Title:");
             tempTitle = Console.ReadLine();
-            Console.WriteLine("Enter the Length of the Track (mm:ss):");
-            tempTime = Console.ReadLine();
             moreMusic.setTitle(tempTitle);
             Console.WriteLine("Enter the Length of the Track (mm:ss):");
+            tempTime = Console.ReadLine();
             moreMusic.setTime(tempTime);
 
             Console.WriteLine($"{music.Display()}");
